@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>kalkulator BMI</title>
+</head>
+<body>
+<!-- header / judul  -->
+    <header>
+        <h1>Kalkulator</h1>
+        <h3>BMI</h3>
+    </header>
+    <!-- from hitung dan hasil -->
+    <div class="mainContainer">
+        <!-- hitung -->
+        <div class="calculate">
+        <h3 id="headerCalculate">Hitung.</h3>
+            <section class="genderFrom">
+            <p>jenis kelamin :</p>
+            <label for="male">laki-laki:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">perempuan:</label>
+            <input type="radio" id="female" name="gender"><br>
+            </section>
+            
+            <section class="weightFrom">
+            <label for="weight">Berat badan(kg):</label><br>
+            <input type="number" id="weight"><br>
+            <span id="weightError"></span>
+            </section>
+            
+            <section class="heightFrom">
+            <label for="height">Tinggibadan(cm):</label><br>
+            <input type="number" id="height"><br>
+            <span id="heightError"></span>
+            </section>
+            
+            
+            <section class="ageFrom">
+            <label for="age">umur(tahun):</label><br>
+            <input type="number" id="age"><br>
+            <span id="ageError"></span>
+            </section>
+            
+            <button type="button" onclick="hiutngBmi()">HitungBMI</button>
+            <button type="button" onclick="resetR()" id="reset">reset</button>
+        </div>
+        
+        <!-- hasil -->
+        <section class="result">
+            <h3 id="headerReseult">Hasil</h3>
+            <h4 id="fNote">-</h4>
+            <h2 id="resultCount">0</h2>
+            <p id="note">-</p>
+            <button type="button">Download Hasil</button>
+
+            <!-- form deskripsi -->
+            <div id="descriptionH">
+                <h2>keunggulan fitur</h2>
+                <p>1. Menghitung berat badan</p>
+                <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+                <p>3. Mempersiapkan program penurunan berat badan</p><br>
+            </div>
+        </section>
+    </div>
+
+    <!-- deskripsi 2 -->
+    <section class="description">
+        <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa
+            (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+            selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.<br><br>
+            Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+            Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = KR/M²</p>
+    </section>
+        
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* style for calculate */
+header {
+    text-align: center;
+    color: orange;
+
+}
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 2em 0;
+}
+
+.mainContainer .calculate,.result {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer .calculate {
+    background-color: orange;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+#headerCalculate {
+    color: white;
+    text-shadow: 2px 2px 10px white;
+
+}
+
+.calculate section {
+    padding: 10px;
+}
+
+.calculate span {
+    color: whitesmoke;
+}
+
+.calculate input {
+    border-radius: 6px;
+    padding: 2.5px;
+    border: 1px black;
+}
+.ageFrom {
+    margin-bottom: 10px;
+}
+
+
+
+/* style for result */
+.mainContainer .result {
+    background-color: orange;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#headerReseult {
+    color: white;
+    text-shadow: 2px 2px 10px white;
+    
+}
+
+#fNote {
+    padding:25px;
+}
+
+#resultCount {
+    padding: 30px;
+    text-shadow: 2px 2px 3px white;
+}
+
+#note {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* button style */
+.mainContainer button {
+    border-radius: 10px;
+    padding: 2.5px;
+    margin: 2px;
+    border: 3px black;
+    background-color: white;
+    color: orange;
+    width: 50%;
+    /* box-shadow: 2px 2px 5px black; */
+    
+}
+
+.mainContainer button:hover {
+    border: 1px solid white;
+    background-color: orange;
+    color: white;
+    box-shadow: 2px 2px 5px white;
+}
+
+/* description style */
+.description {
+    padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+}
+
+/* responsive for mobile */
+@media only screen and (max-width: 425px) {
+
+
+    .mainContainer{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mainContainer .calculate{
+        margin-bottom: 15px
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    
+}
